@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Articles</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<div class="head-section">
+			<a href="index.html" class="mainIcon"><i class="fa fa-user"></i></a>
+			<h1>Navaneeth Bysani</h1>
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="articles.html">Articles</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+
+	<div align="center">
+		
+		<div class="article-box">
+
+			<canvas class="articleCanvas">
+				
+			</canvas>
+			<script type="text/javascript">
+				const canvas = document.querySelector('.articleCanvas');
+				const ctx = canvas.getContext("2d");
+				const Btn = document.querySelector('button');
+				ctx.textAlign = "center";
+				ctx.font = "25px Comic Sans MS";
+
+				ctx.fillText("No articles posted yet",canvas.width/2,canvas.height/2);
+			</script>
+		</div>
+	</div>
+	<br><br><br>
+</body>
+</html>
